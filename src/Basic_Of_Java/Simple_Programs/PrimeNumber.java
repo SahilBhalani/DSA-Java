@@ -1,0 +1,30 @@
+package Basic_Of_Java.Simple_Programs;
+
+import java.awt.desktop.PreferencesEvent;
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        boolean ans = isPrime(n);
+        System.out.println(ans);
+    }
+
+    static boolean isPrime(int n){
+        if(n<=1)
+        {
+            return false;
+        }
+
+        int c = 2;
+        while(c * c <= n){
+            return  false;
+        }
+        c++;
+
+        return c * c > n;
+    }
+
+}
